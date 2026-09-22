@@ -1,0 +1,7 @@
+node_modules/
+dist/
+client/dist/
+.env
+data/runtime.json.tmp.*
+.DS_Store
+*.log

@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "exceljs": "^4.4.0"
+  },
+  "dependencies": {
+    "honey-juice-shop": "file:.."
+  }
+}
