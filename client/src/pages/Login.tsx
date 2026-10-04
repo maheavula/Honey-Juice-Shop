@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { LogIn, KeyRound, Mail, Sparkles, Shield, User } from 'lucide-react';
+import { LogIn, KeyRound, Mail } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 export const Login: React.FC = () => {
@@ -19,11 +19,6 @@ export const Login: React.FC = () => {
     if (success) {
       navigate('/');
     }
-  };
-
-  const handleQuickFill = (demoEmail: string, demoPass: string) => {
-    setEmail(demoEmail);
-    setPassword(demoPass);
   };
 
   return (
@@ -81,38 +76,6 @@ export const Login: React.FC = () => {
           <span>{submitting ? 'Authenticating...' : 'Sign In'}</span>
         </button>
       </form>
-
-      {/* Demo Credentials Helper */}
-      <div className="pt-4 border-t border-stone-800/80 space-y-2.5">
-        <span className="text-[11px] font-semibold text-honey-400 uppercase tracking-wider block text-center">
-          Instant Demo Quick-Fill
-        </span>
-        <div className="grid grid-cols-2 gap-2">
-          <button
-            type="button"
-            onClick={() => handleQuickFill('admin@honeyjuiceshop.local', 'Admin#HoneyJuice2026!')}
-            className="p-2.5 rounded-xl bg-obsidian-950 border border-honey-500/20 hover:border-honey-500/50 text-left transition-colors group"
-          >
-            <div className="flex items-center gap-1.5 text-xs font-semibold text-honey-300 group-hover:text-honey-200">
-              <Shield className="w-3.5 h-3.5 text-honey-400" />
-              <span>Admin Demo</span>
-            </div>
-            <div className="text-[10px] text-stone-500 truncate">admin@honeyjuiceshop.local</div>
-          </button>
-
-          <button
-            type="button"
-            onClick={() => handleQuickFill('customer@honeyjuiceshop.local', 'Customer@Juice2026')}
-            className="p-2.5 rounded-xl bg-obsidian-950 border border-stone-800 hover:border-stone-700 text-left transition-colors group"
-          >
-            <div className="flex items-center gap-1.5 text-xs font-semibold text-stone-300 group-hover:text-stone-200">
-              <User className="w-3.5 h-3.5 text-stone-400" />
-              <span>Customer Demo</span>
-            </div>
-            <div className="text-[10px] text-stone-500 truncate">customer@honeyjuiceshop.local</div>
-          </button>
-        </div>
-      </div>
 
       <div className="text-center text-xs text-stone-400 pt-2">
         Don't have an account yet?{' '}

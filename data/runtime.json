@@ -4,7 +4,7 @@
       "id": "usr_a7f9b2d4e1c8",
       "name": "Admin Manager",
       "email": "admin@honeyjuiceshop.local",
-      "passwordHash": "$2b$10$egElKKTPr9F6YhDNWsMqh.iIWRlGyR61cDALAt2GkSoTEUe2VOwNW",
+      "passwordHash": "$2b$10$NlCUVMbvWZPj1Vu1kmQFROoJyRxxmhd2Vxd1NG44BnwwAmrq7Y/Nu",
       "role": "admin",
       "status": "active",
       "phone": "+91 9876543210",
@@ -20,7 +20,7 @@
       "id": "usr_c3e5d7f1a9b4",
       "name": "Rohan Patel",
       "email": "customer@honeyjuiceshop.local",
-      "passwordHash": "$2b$10$Einwr6puH8MQ.NhOLdTvcO2yeoe8JuWBi21CiEB38zIi2rQWge9R2",
+      "passwordHash": "$2b$10$XqkHxfAo2n9REKCj2ZpGNu7Z1ebzpnWruY2iDYfIvsDvE6uc6hCqa",
       "role": "customer",
       "status": "active",
       "phone": "+91 9123456780",
@@ -31,22 +31,6 @@
         "postalCode": "560025"
       },
       "createdAt": "2026-09-01T09:00:00.000Z"
-    },
-    {
-      "id": "usr_1b10c066173e",
-      "name": "Mahesh",
-      "email": "mahesh@gmail.com",
-      "passwordHash": "$2b$10$YEfRFtEUg7wpgAaePSRB3eSk4ELH9TG.1eMEAd7RtvzyENvmUadiO",
-      "role": "customer",
-      "status": "active",
-      "phone": "9876543210",
-      "address": {
-        "street": "sadfgdhfgjndfcxfvc ",
-        "city": "bdfs",
-        "state": "Karnataka",
-        "postalCode": ""
-      },
-      "createdAt": "2026-09-21T17:45:57.676Z"
     }
   ],
   "juices": [
@@ -182,6 +166,15 @@
       "rating": 4,
       "comment": "Great anti-inflammatory blend. Turmeric with honey and pineapple is surprisingly smooth!",
       "createdAt": "2026-09-05T14:20:00.000Z"
+    },
+    {
+      "id": "rev_79654e8764cd",
+      "juiceId": "jce_8f1a3d5e7c9b",
+      "userId": "usr_c3e5d7f1a9b4",
+      "userName": "Rohan Patel",
+      "rating": 5,
+      "comment": "Phenomenal aroma and pure sweetness!",
+      "createdAt": "2026-10-04T14:12:33.735Z"
     }
   ],
   "orders": [
@@ -208,32 +201,38 @@
       "paymentMethod": "UPI / Card",
       "status": "delivered",
       "createdAt": "2026-09-03T11:00:00.000Z"
+    },
+    {
+      "id": "ord_1a4c5b4a95a4",
+      "userId": "usr_c3e5d7f1a9b4",
+      "customerName": "Rohan Patel",
+      "customerEmail": "customer@honeyjuiceshop.local",
+      "items": [
+        {
+          "juiceId": "jce_8f1a3d5e7c9b",
+          "name": "Raw Honey Alphonso Blast",
+          "price": 24900,
+          "quantity": 2
+        }
+      ],
+      "totalAmount": 49800,
+      "deliveryAddress": {
+        "street": "45 Green Park",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "postalCode": "560025"
+      },
+      "paymentMethod": "UPI Instant",
+      "status": "dispatched",
+      "createdAt": "2026-10-04T14:12:33.901Z"
     }
   ],
   "sessions": [
     {
-      "id": "sess_fd25dad0-0923-4265-9e84-f888c2649ea4",
-      "userId": "usr_c3e5d7f1a9b4",
-      "createdAt": "2026-09-21T17:12:42.174Z",
-      "expiresAt": "2026-09-28T17:12:42.174Z"
-    },
-    {
-      "id": "sess_02b124a9-d2b9-4b8e-b5c8-35ee47659593",
-      "userId": "usr_c3e5d7f1a9b4",
-      "createdAt": "2026-09-21T17:36:39.453Z",
-      "expiresAt": "2026-09-28T17:36:39.453Z"
-    },
-    {
-      "id": "sess_8b3d6bdc-81be-4252-bcb8-3459279ad034",
-      "userId": "usr_1b10c066173e",
-      "createdAt": "2026-09-21T17:45:57.676Z",
-      "expiresAt": "2026-09-28T17:45:57.676Z"
-    },
-    {
-      "id": "sess_54847442-9850-45cc-ba61-4132040a56e5",
-      "userId": "usr_1b10c066173e",
-      "createdAt": "2026-09-21T17:46:32.432Z",
-      "expiresAt": "2026-09-28T17:46:32.432Z"
+      "id": "sess_d03633ee-8b77-4301-85e0-fe63980da09e",
+      "userId": "usr_a7f9b2d4e1c8",
+      "createdAt": "2026-10-04T14:12:34.000Z",
+      "expiresAt": "2026-10-11T14:12:34.000Z"
     }
   ],
   "metadata": {
